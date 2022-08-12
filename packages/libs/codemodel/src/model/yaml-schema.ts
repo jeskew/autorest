@@ -24,7 +24,7 @@ import { NumberSchema } from "./common/schemas/number";
 import { GroupSchema, ObjectSchema, Discriminator, Relations, GroupProperty } from "./common/schemas/object";
 import { BooleanSchema, CharSchema } from "./common/schemas/primitive";
 import { OrSchema, XorSchema } from "./common/schemas/relationship";
-import { StringSchema, ODataQuerySchema, CredentialSchema, UriSchema, UuidSchema } from "./common/schemas/string";
+import { StringSchema, ODataQuerySchema, CredentialSchema, UriSchema, UuidSchema, ArmIdSchema } from "./common/schemas/string";
 import { DurationSchema, DateTimeSchema, DateSchema, UnixTimeSchema, TimeSchema } from "./common/schemas/time";
 import { OAuth2SecurityScheme, KeySecurityScheme, Security } from "./common/security";
 import { Value } from "./common/value";
@@ -112,6 +112,7 @@ export const codeModelSchema = DEFAULT_SCHEMA.extend([
   TypeInfo(CredentialSchema),
   TypeInfo(UriSchema),
   TypeInfo(UuidSchema),
+  TypeInfo(ArmIdSchema),
   TypeInfo(DurationSchema),
   TypeInfo(DateTimeSchema),
   TypeInfo(DateSchema),
